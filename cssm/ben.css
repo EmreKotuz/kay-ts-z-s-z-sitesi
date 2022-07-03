@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	line-height: 1.5;
+}
+a{
+	color: blueviolet;
+    text-decoration: none;
+
+}
+h1 {
+	font-weight: 300;
+	font-size: 50px;
+	line-height: 1.2;
+	margin-bottom: 15px;
+}
+
+/* Giriş Bölümü */
+.intro {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	color: white;
+	padding: 0 20px;
+}
+/* Giriş Bölümü Bitiş */
+
+/* Video Konumlandırma */
+.video-container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background: #333;
+}
+.video-container video {
+    min-width: 100%;
+	min-height: 100%;
+    position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	object-fit: cover;
+}
+/* Video Konumlandırma Bitiş */
+#kul{
+	color: blueviolet;
+}
+/* Karartma Efekti */
+.video-container:after {
+	content: '';
+	z-index: 1;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.5);
+	position: absolute;
+}
+/* Karartma Efekti Bitiş */
+
+.content {
+	z-index: 2;	
+}
+
+
+.read-more {
+	display: inline-block;
+	padding: 10px 30px;
+	background: #2ECC71;
+	color: white;
+	border-radius: 5px;
+	border: solid #fff 1px;
+	margin-top: 25px;
+	opacity: 0.8;
+    transition: .2s all;
+    text-decoration: none;
+}
+.read-moree {
+	display: inline-block;
+	padding: 10px 30px;
+	background: #3498DB;
+	color: #fff;
+	border-radius: 5px;
+	border: solid #fff 1px;
+	margin-top: 25px;
+	opacity: 0.8;
+    transition: .2s all;
+    text-decoration: none;
+}
+
+.read-more:hover {
+	transform: scale(.9);
+    color: white;
+}
+.read-moree:hover {
+	transform: scale(.9);
+    color: white;
+}
+/* İçerik (Opsiyonel) */
+#page {
+	padding: 40px;
+	text-align: center;
+}
+
+#page p {
+	font-size: 1.2rem;
+	max-width: 600px;
+	margin: auto;
+}
+
+#page h2 {
+	margin: 30px 0;
+	color: #333;
+}
+
+.social a {
+	margin: 0 5px;
+	text-decoration: none;
+	color: blueviolet;
+}
+/* İçerik Bitiş */
+
+
+@media only screend and (max-width:800px) { 
+	#kutular{
+		margin-left: -43%;
+
+	}
+}

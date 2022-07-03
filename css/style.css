@@ -1,0 +1,34 @@
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: #FD7272;
+    transition: 2s;
+}
+span{
+    font-size:12px;
+}
+#comments{
+    float:right;
+    color: #38ada9;
+}
+#logo{
+    color: #353b48;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.bslk{
+    color: #05c46b;
+}
+.rsm{
+    height: auto;
+}
+.adm{
+    margin-top: 18%;
+}
+@media screen and (max-width: 600px) 
+{
+    .adm{
+        margin-top: 50%;
+    }
+}
